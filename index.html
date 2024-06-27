@@ -59,6 +59,7 @@
       z-index: 1;
       color: #fff;
       text-align: center;
+      padding: 0 20px;
     }
 
     .text h1 {
@@ -94,6 +95,54 @@
     /* Styles for Buttons */
     .btn {
       margin-top: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .hero {
+        height: 75vh;
+      }
+
+      .text h1 {
+        font-size: 2.5rem;
+      }
+
+      #typing-animation {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: 60vh;
+      }
+
+      .text h1 {
+        font-size: 2rem;
+      }
+
+      #typing-animation {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        height: 50vh;
+      }
+
+      .text h1 {
+        font-size: 1.5rem;
+      }
+
+      #typing-animation {
+        font-size: 0.8rem;
+      }
+
+      .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -131,118 +180,94 @@
       </p>
     </div>
   </section>
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/zee_pic2.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Zeeshan Haleem</span></p>
-										<!-- <p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p> -->
-										<p><span class="title-s">Experience: </span> <span> 3.5+ years</span></p>
-										<p><span class="title-s">Address: </span> <span>New Delhi, India</span></p>
-									  </div>
-									</div>
-								  </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Python</span> <span class="pull-right">9.5/10</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>SQL</span> <span class="pull-right">9.5/10<span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">9/10</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-																		
-									<span>Machine Learning</span> <span class="pull-right">9/10</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-											
-									</div>
-									<span>Microsoft Tools(Power BI, MS Excel)</span> <span class="pull-right">7.5/10</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span> MLOps (Azure, Databricks and Dataiku) </span> <span class="pull-right">7.5/10</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span> Statistics & Operations Research Analysis skills </span> <span class="pull-right">8.5/10</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row d-flex align-items-stretch">
+        <div class="col-md-6 col-lg-5 d-flex">
+          <div class="img-about img d-flex align-items-stretch">
+            <div class="overlay">
+              <div class="row">
+                <div class="col-sm-6 col-md-5">
+                  <div class="about-img">
+                    <img src="images/zee_pic2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-7">
+                  <div class="about-info">
+                    <p><span class="title-s">Name: </span> <span>Zeeshan Haleem</span></p>
+                    <p><span class="title-s">Experience: </span> <span>3.5+ years</span></p>
+                    <p><span class="title-s">Address: </span> <span>New Delhi, India</span></p>
+                  </div>
+                </div>
+              </div>
 
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>I am a Experienced data scientist with a strong background in data preprocessing, 
-									exploratory data analysis, and predictive modeling. Skilled in using advanced statistical methods and machine 
-									learning algorithms to extract insights from large datasets, and proficient in programming languages such as 
-									Python and SQL and passionate about using data-driven solutions to drive business growth.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Scientist</span></li>
-									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
-									<li class="d-flex"><span>Education:</span> <span>Master of Science (Operations Research)</span></li>
-									<li class="d-flex"><span>Language:</span> <span>Professional English</span></li>
-									<li class="d-flex"><span>Qualities</span> <span>   adaptive, Confident &amp; Always keep to learn new skills</span></li>
-									<!-- <li class="d-flex"><span>Other Skills:</span> <span>Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
-									<li class="d-flex"><span>Interest:</span> <span>Swimming, Surfing Internet, Trading</span></li>
-									
-								</ul>
-							</div>
-						</div>
+              <div class="skill-mf">
+                <p class="title-s">Skills</p>
+                <span>Python</span> <span class="pull-right">9.5/10</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
 
+                <span>SQL</span> <span class="pull-right">9.5/10<span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								 <!-- <p class="mb-4"> 
-									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>  -->
-								 <p><a href="https://www.linkedin.com/in/zeeshan-haleem-b05062116/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							 </div> 
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
+                <span>Data Visualization</span> <span class="pull-right">9/10</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
 
+                <span>Machine Learning</span> <span class="pull-right">9/10</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <span>Microsoft Tools(Power BI, MS Excel)</span> <span class="pull-right">7.5/10</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <span>MLOps (Azure, Databricks and Dataiku)</span> <span class="pull-right">7.5/10</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <span>Statistics & Operations Research Analysis skills</span> <span class="pull-right">8.5/10</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+          <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+              <h1 class="big">About</h1>
+              <h2 class="mb-4">About Me</h2>
+              <p>I am an experienced data scientist with a strong background in data preprocessing, exploratory data analysis, and predictive modeling. Skilled in using advanced statistical methods and machine learning algorithms to extract insights from large datasets, and proficient in programming languages such as Python and SQL and passionate about using data-driven solutions to drive business growth.</p>
+              <ul class="about-info mt-4 px-md-0 px-2">
+                <li class="d-flex"><span>Profile:</span> <span>Data Scientist</span></li>
+                <li class="d-flex"><span>Education:</span> <span>Master of Science (Operations Research)</span></li>
+                <li class="d-flex"><span>Language:</span> <span>Professional English</span></li>
+                <li class="d-flex"><span>Qualities:</span> <span>Adaptive, Confident & Always keen to learn new skills</span></li>
+                <li class="d-flex"><span>Interest:</span> <span>Swimming, Surfing Internet, Trading</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+            <div class="text">
+              <p><a href="https://www.linkedin.com/in/zeeshan-haleem-b05062116/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
@@ -263,7 +288,7 @@
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<h1>ORMAE LLP</h1>
-						<span class="date">Mar2022-Jun2024</span>
+						<span class="date">Mar2022-till date</span>
 						<h2>Data Scientist</h2>
 						<span class="position">Data Scientist II</span>
 							<ul>
