@@ -1,211 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Zeeshan Haleem Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+  <title>Zeeshan Haleem Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
 
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
 
-<style>
+    /* Styles for Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('images/AI2.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+    .text {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      text-align: center;
+    }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+    .text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+    .text .subheading {
+      font-size: 1.2rem;
+    }
 
+    /* Styles for Typing Animation */
+    #typing-animation {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffd700;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: .15em solid #fff;
+      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #fff; }
+    }
 
+    /* Styles for Buttons */
+    .btn {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Welcome To Here</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Welcome To Here</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/AI2.jpg); width:1340px " >
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading"> <strong>Hello!</strong></span>
-			            <h1  class="mb-4 mt-3">I'm <span>Zeeshan Haleem</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation" style="color: yellow(49, 53, 92, 0.742);"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Software Engineer  ',
-						'Data Analyst  ',
-						// 'Teacher   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h5 style="color: black(80, 48%, 90%, 0.094);"><strong>I am a Experienced data scientist with a strong background in data preprocessing, 
-							exploratory data analysis, and predictive modeling. Skilled in using advanced statistical methods and machine 
-							learning algorithms to extract insights from large datasets, and proficient in programming languages such as 
-							Python and SQL and passionate about using data-driven solutions to drive business growth.
-						</strong></h5>
-					
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
-							<a href="https://www.linkedin.com/in/zeeshan-haleem-b05062116/" class="btn btn-primary py-3 px-4">My works</a></p>
-							<p><a href="https://github.com/Zeeshan-99?tab=repositories" class="btn btn-primary py-3 px-4">Resume</a> 
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
+  <section id="home-section" class="hero">
+    <div class="overlay"></div>
+    <div class="text">
+      <span class="subheading"><strong>Hello!</strong></span>
+      <h1 class="mb-4 mt-3">I'm <span>Zeeshan Haleem</span></h1>
+      <span id="typing-animation"></span>
+      <h5 class="mt-4">I am an experienced data scientist with a strong background in data preprocessing, exploratory data analysis, and predictive modeling. Skilled in using advanced statistical methods and machine learning algorithms to extract insights from large datasets, proficient in programming languages such as Python and SQL, and passionate about using data-driven solutions to drive business growth.</h5>
+      <p>
+        <a href="https://www.linkedin.com/in/zeeshan-haleem-b05062116/" class="btn btn-primary py-3 px-4">My works</a>
+        <a href="https://github.com/Zeeshan-99?tab=repositories" class="btn btn-primary py-3 px-4">Resume</a>
+      </p>
+    </div>
+  </section>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
 			<div class="row">
@@ -318,9 +243,6 @@
 		</div>
     </section>
 
-
-
-	
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
@@ -386,7 +308,7 @@
 						<h2>Statistical Analyst</h2>
 						<p class="mt-4"> 
 							<ul>
-								<li>Throughout the Job, I delved deep into various facets of data analytics, gaining hands-on experience through projects.</li>
+								<li> Throughout the Job, I delved deep into various facets of data analytics, gaining hands-on experience through projects.</li>
 								<li> Conducted secondary research on Social Science parameters and extracting meaningful information from the raw data, like CBR, CDR, ASFR, Child Sex Ratio (0-6), GRR, GFR, Communicable Diseases, Non-Communicable Diseases and so on.</li>
 								<li> Compiled and Cleansed data to present in an organized way using Python advanced techniques.</li>
 								<li> Web-Scraping data from different sources using advanced Python module called Beautiful Soup.</li>
@@ -421,7 +343,7 @@
     					<span class="date">2011-2014</span>
     					<h5>Master of Science (Statistics Hons.)</h5>
     					<span class="position">Aligarh Muslim University</span>
-    					<p class="mt-4">Grade: First Devision.</p>
+    					<p class="mt-4">Grade: First Division.</p>
     				</div>
 				</div>
     		</div>
@@ -448,70 +370,83 @@
         <div class="row d-flex">
         	<div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Zeeshan-99/Movie_recommender_System.git" class="block-20 zoom-effect" style="background-image: url('images/crop.img.jpg');">
+              <a href="https://github.com/Zeeshan-99/Movie_recommender_System.git" class="block-20 zoom-effect" style="background-image: url('images/Movie_recom.jpeg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://github.com/Zeeshan-99/Movie_recommender_System.git">Movie Recommender System</a></h3>
-                <p>•	Enhance agricultural productivity and resilience by recommending crop varieties and cultivation practices optimized for diverse soil types, water availability, oxygen levels, and weather conditions, ensuring adaptive and sustainable farming practices..</p>
+                <p> Developed a movie recommendation system using Streamlit, Python, and machine learning techniques. The system recommends movies based on user-selected preferences, leveraging a pre-trained similarity model. Implemented functionalities to display recommended movies along with their posters, enhancing user engagement.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Zeeshan-99/sales_forecasting.git" class="block-20 zoom-effect" style="background-image: url('images/SQL-Projects-For-Data-Analysis.jpg');">
+              <a href="https://github.com/Zeeshan-99/sales_forecasting.git" class="block-20 zoom-effect" style="background-image: url('images/sales_forcast.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Zeeshan-99/sales_forecasting.git">sales_forecasting</a></h3>
-                <p>The goal of this data analysis project using sql would be to identify opportunities to increase the occupancy rate on low-performing flights, which can ultimately lead to increased profitability for the airline.</p>
+                <h3 class="heading"><a href="https://github.com/Zeeshan-99/sales_forecasting.git">Sales forecasting</a></h3>
+                <p>Developed a sales forecasting system using Flask, Python, and machine learning techniques. The system predicts future sales trends by training a Random Forest Regressor on historical sales data. Implemented functionalities to visualize both historical and forecasted sales trends, enhancing decision-making processes for business growth.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/Zeeshan-99/mlproject_Student_Score_Prediction.git" class="block-20 zoom-effect" style="background-image: url('images/power bi ss.jpg');">
+              <a href="https://github.com/Zeeshan-99/mlproject_Student_Score_Prediction.git" class="block-20 zoom-effect" style="background-image: url('images/student_score_pred.jpeg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Zeeshan-99/mlproject_Student_Score_Prediction.git">Student_Score_Prediction</a></h3>
-                <p>Explore Amazon Sales Dashboard key metrics like sales by segment, market, and uncover profit insights by customer.</p>
+                <h3 class="heading"><a href="https://github.com/Zeeshan-99/mlproject_Student_Score_Prediction.git">Student Score Predictions</a></h3>
+                <p>Implemented a Flask-based web application for predicting student scores based on demographic and academic parameters. Users can input details such as gender, ethnicity, parental education level, lunch type, and test preparation status along with writing and reading scores. Utilized a custom data pipeline to preprocess input data, including standardization using StandardScaler. Integrated a prediction pipeline to generate predictions using a machine learning model in real-time. Enhanced user interaction through dynamic rendering of predicted scores on a web interface.</p>
               </div>
             </div>
           </div>
 		  <div class="col-md-4 d-flex ftco-animate">
 			<div class="blog-entry">
-			<a href="https://github.com/Zeeshan-99/Book_genre_classification.git" class="block-20 zoom-effect" style="background-image: url('images/power bi ss.jpg');">
+			<a href="https://github.com/Zeeshan-99/Book_genre_classification.git" class="block-20 zoom-effect" style="background-image: url('images/Book_genre_class.png');">
 			</a>
 			<div class="text mt-3 float-right d-block">
 
-			  <h3 class="heading"><a href="https://github.com/Zeeshan-99/Book_genre_classification.git">Book_genre_classification.git</a></h3>
-			  <p>Explore Amazon Sales Dashboard key metrics like sales by segment, market, and uncover profit insights by customer.</p>
+			  <h3 class="heading"><a href="https://github.com/Zeeshan-99/Book_genre_classification.git">Book Genre Classifications</a></h3>
+			  <p>Developed a book genre classification system using natural language processing techniques and machine learning models. Preprocessed text data from book summaries, including text cleaning, removal of stopwords, lemmatization, and stemming using NLTK. Applied CountVectorizer to convert text data into numerical features and experimented with different configurations for optimal feature extraction. Trained and evaluated various classifiers such as Decision Tree, Random Forest, Naive Bayes, and Support Vector Machine (SVM) to predict book genres based on summarized content. Visualized word frequency distributions to gain insights into the most frequent words per genre category, enhancing model interpretability and performance.</p>
 			</div>
 		  </div>
 		</div>
 		<div class="col-md-4 d-flex ftco-animate">
 			<div class="blog-entry">
-			<a href="https://github.com/Zeeshan-99/Laptop_price_prediction.git" class="block-20 zoom-effect" style="background-image: url('images/power bi ss.jpg');">
+			<a href="https://github.com/Zeeshan-99/Laptop_price_prediction.git" class="block-20 zoom-effect" style="background-image: url('images/Laptop_price_pred.jpeg');">
 			</a>
 			<div class="text mt-3 float-right d-block">
 
-			  <h3 class="heading"><a href="https://github.com/Zeeshan-99/Laptop_price_prediction.git">Laptop_price_prediction.git</a></h3>
-			  <p>Explore Amazon Sales Dashboard key metrics like sales by segment, market, and uncover profit insights by customer.</p>
+			  <h3 class="heading"><a href="https://github.com/Zeeshan-99/Laptop_price_prediction.git">Laptop Price Predictions</a></h3>
+			  <p>Developed a web-based application using Streamlit for predicting laptop prices based on various features. Utilized a Random Forest model trained on a dataset containing laptop specifications such as brand, type, RAM, operating system, weight, touchscreen availability, IPS display, screen size, resolution, CPU, HDD size, SSD size, and GPU brand. Implemented preprocessing steps including feature selection, data cleaning, and encoding categorical variables. Integrated the model into a user-friendly interface where users can input laptop specifications and receive predicted price ranges. Enhanced user experience with interactive dropdowns and input fields for real-time predictions.</p>
 			</div>
 		  </div>
 		</div>
 		<div class="col-md-4 d-flex ftco-animate">
 			<div class="blog-entry">
-			<a href="https://github.com/Zeeshan-99/Crypto_Buy_Signals_App.git" class="block-20 zoom-effect" style="background-image: url('images/power bi ss.jpg');">
+			<a href="https://github.com/Zeeshan-99/Crypto_Buy_Signals_App.git" class="block-20 zoom-effect" style="background-image: url('images/Crypto_pred.jpeg');">
 			</a>
 			<div class="text mt-3 float-right d-block">
 
-			  <h3 class="heading"><a href="https://github.com/Zeeshan-99/Crypto_Buy_Signals_App.git"> Crypto_Buy_Signals_App</a></h3>
-			  <p>Explore Amazon Sales Dashboard key metrics like sales by segment, market, and uncover profit insights by customer.</p>
+			  <h3 class="heading"><a href="https://github.com/Zeeshan-99/Crypto_Buy_Signals_App.git"> Cryptos Buy Signals App</a></h3>
+			  <p>Developed a Streamlit-based application for automated trading signals in cryptocurrencies. Integrated with Binance API to fetch real-time candlestick data and calculate key technical indicators including Exponential Moving Averages (EMAs) and Relative Strength Index (RSI). Implemented multiple trading strategies based on EMA convergence and RSI thresholds to generate buy and sell signals. Enhanced user interface with customizable parameters for selecting cryptocurrency symbols, timeframe, initial investment, and trading strategy. Visualized candlestick charts with annotated trade signals using Plotly for interactive analysis. Evaluated trading performance with simulated trades, displaying trade history and final balance metrics.</p>
 			</div>
 		  </div>
 		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://github.com/Zeeshan-99/Book_Recommender_System.git" class="block-20 zoom-effect" style="background-image: url('images/Book_recom.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Zeeshan-99/Book_Recommender_System.git"> Book Recommender System</a></h3>
+			  <p>Created a Flask-based web application to recommend books based on user preferences. Loaded and utilized precomputed similarity scores between books using collaborative filtering techniques. The application allows users to input their preferences and receives recommendations of similar books. Deployed with Flask, the system provides an interactive interface displaying recommended books along with their authors and cover images.</p>
+			</div>
+		  </div>
+		  
+		</div>
+
 
         </div>
 	<br>
